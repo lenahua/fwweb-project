@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共享空間租借網站</title>
+    <meta name="description" content="提供多樣化的共享空間，從私人辦公室到共用工作區，滿足您的所有需求。"/>
+    <meta name="robot" content="index, follow" />
+    
+    <!-- Google font setting -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./contact.css" />
+    
+</head>
+<body>
+  <!-- goTop -->
+  <button onclick="topFunction()" class="gotop" id="gotop"><img width="48" height="48" 
+    src="https://img.icons8.com/plumpy/48/000000/collapse-arrow.png" alt="collapse-arrow"/></button>
+    <!-- header -->
+    <header>
+      <div class="logo"><a href="index.html">
+        <img src="/workplace-project-pic/logo.png" alt="kawaii-steak-logo"/></a>
+        <h3>FLEXCO WORKSPACE</h3>
+      </div>
+      <nav>
+          <ul>
+              <li class="dropdown"> 
+                <a href="index.html" class="dropbtn">About</a>
+                <div class="dropdownContent">
+                  <a href="#">經營理念</a>
+                  <a href="#">專屬規劃</a>
+                </div>
+              </li>
+              <li class="dropdown"> 
+                <a href="./plan.html" class="dropbtn">Plans</a>
+                <div class="dropdownContent">
+                  <a href="./plan.html">靈活共用</a>
+                  <a href="./plan.html">私人辦公室</a>
+                  <a href="./plan.html">會議室套餐</a>
+                </div>
+              </li>
+              
+              <li> <a href="#">Q&A</a></li>
+              <li> <a class="contact" href="./contact.html">Contact</a></li>
+          </ul>
+      </nav>
+      <div class="contactIcon">
+          <a href="#"><img src="/workplace-project-pic/line.svg" alt="line"></a>
+          <a href="#"><img src="/workplace-project-pic/instagram.svg" alt="instragram"></a>
+          <a href="#"><img src="/workplace-project-pic/linkedin.svg" alt="linkedin"></a>
+      </div>
+  </header>
+
+    <main class="containerTop">
+        <div class="left">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.604090474392!2d120.6485731750356!3d24.150538173297775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d965116b917%3A0x7f9d28309f4865c2!2zNDA45Y-w5Lit5biC5Y2X5bGv5Y2A5aSn6YCy6KGX5ZyL5rOw5Lq65aO95YWs55uK5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1702557538929!5m2!1szh-TW!2stw" 
+          width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="right">
+            <h1>Contact US</h1>
+            <h3>歡迎與我們取得聯繫！如果您有任何疑問、建議或合作提案，我們都很樂意聽取並提供支援。</h3>
+            <img src="" alt=""><h4>TEL: 04-11110000</h4>
+            <img src="" alt=""><h4>Mail: fake@fwinc.com</h4><br/>
+            <img class="icon" src="/workplace-project-pic/iconmonstr-instagram-8.svg" alt="">&nbsp;
+            <img class="icon" src="/workplace-project-pic/iconmonstr-line-3.svg" alt="">&nbsp;
+            <img class="icon" src="/workplace-project-pic/iconmonstr-linkedin-3.svg" alt="">
+        </div>
+      
+    </main>
+    <div class="wrap">
+      <div class="form">
+          <div class="left">
+              <video src="/Collab.mp4" muted autoplay loop></video>
+          </div>
+          <div class="right">
+              <div class="right-con">
+                  <h3>姓名</h3>
+                  <input class="text" type="text" placeholder="請輸入您的姓名" required />
+                  <h3>電話</h3>
+                  <input class="text" type="text" placeholder="請輸入聯絡電話" required />
+                  <h3>信箱</h3>
+                  <input class="text" type="email" placeholder="請輸入您的信箱" required />
+                  <h3>辦公人數</h3>
+                  <input class="people" type="number" min="1" max="60" value="1" required/>
+                  <h3>您的需求</h3>
+                  <input class="text" type="text" placeholder="歡迎告知我們任何您的需求">
+                  <input class="btn" type="submit" value="Submit" onclick="message()">
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      function message(){
+        alert("我們已收到您提交的表單，將會有專員聯絡您，謝謝！");
+      }
+     
+    </script>
+
+    <!-- footer -->
+    <footer>
+  
+        <div class="footerContent">
+          <h3>About</h3>
+          <li><a href="#">經營理念</a></li>
+          <li><a href="#">專屬規劃</a></li>
+        </div>
+        <div class="footerContent">
+          <h3>Plans</h3>
+          <li><a href="#">靈活共用</a></li>
+          <li><a href="#">私人辦公室</a></li>
+          <li><a href="#">會議室套餐</a></li>
+        </div>
+        <div class="footerContent">
+          <h3>Q&A</h3>
+          <p><a href="#">服務相關</a></p>
+        </div>
+        <div class="footerContent">
+          <h3>Contact</h3>
+          <p>TEL: 04-11110000</p>
+          <p>Mail: fake@fwinc.co</p>
+        </div>
+      
+    </footer>
+    <script>
+      // goTop btn
+    let goTop = document.getElementById("gotop");
+    window.onscroll = function(){scrollFunction()};
+    function scrollFunction(){
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20){
+            goTop.style.display = "block";
+        } else{
+            goTop.style.display = "none";
+        }
+    }
+    function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+</body>
+
+</html>

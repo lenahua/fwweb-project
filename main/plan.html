@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共享空間租借網站</title>
+    <meta name="description" content="提供多樣化的共享空間，從私人辦公室到共用工作區，滿足您的所有需求。"/>
+    <meta name="robot" content="index, follow" />
+    
+    <!-- Google font setting -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./plan.css" />
+    
+</head>
+<body>
+  <!-- goTop -->
+  <button onclick="topFunction()" class="gotop" id="gotop"><img width="48" height="48" 
+    src="https://img.icons8.com/plumpy/48/000000/collapse-arrow.png" alt="collapse-arrow"/></button>
+    <!-- navBar -->
+  <header>
+    <div class="logo"><a href="index.html">
+      <img src="/workplace-project-pic/logo.png" alt="kawaii-steak-logo"/></a>
+      <h3>FLEXCO WORKSPACE</h3>
+    </div>
+    <nav>
+        <ul>
+            <li class="dropdown"> 
+              <a href="index.html" class="dropbtn">About</a>
+              <div class="dropdownContent">
+                <a href="#">經營理念</a>
+                <a href="#">專屬規劃</a>
+              </div>
+            </li>
+            <li class="dropdown"> 
+              <a href="./plan.html" class="dropbtn plan">Plans</a>
+              <div class="dropdownContent">
+                <a href="./plan.html">靈活共用</a>
+                <a href="./plan.html">私人辦公室</a>
+                <a href="./plan.html">會議室套餐</a>
+              </div>
+            </li>
+            
+            <li> <a href="#">Q&A</a></li>
+            <li> <a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contactIcon">
+        <a href="#"><img src="/workplace-project-pic/line.svg" alt="line"></a>
+        <a href="#"><img src="/workplace-project-pic/instagram.svg" alt="instragram"></a>
+        <a href="#"><img src="/workplace-project-pic/linkedin.svg" alt="linkedin"></a>
+    </div>
+  </header>
+
+  <div class="containerPlan">
+      <div class="planA">
+        <div class="planLeft">
+          <h1>靈活共用</h1>
+          <h3>方案特色</h3>
+          <ol>
+            <li>靈活的按需支付</li>
+            <li>共用工作區</li>
+            <li>高速網絡和基本辦公設施</li>
+          </ol>
+          <button onclick="showAppointForm();" class="btn" name="btn" id="btn"><a>立即預約</a></button>  
+        </div>
+        <div class="planRight">
+          <img src="/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash 1.png" alt="" style="width: 100%;" />
+        </div>
+      </div>
+      
+      <div class="planB">
+        <div class="planLeft">
+          <img src="/s-o-c-i-a-l-c-u-t-EwQhB7yNGOU-unsplash 1.png" alt="" style="width: 100%;" />
+        </div>
+        <div class="planRight">
+          <h1>專業私人辦公室</h1>
+          <h3>方案特色</h3>
+          <ol>
+            <li>專屬私人辦公室</li>
+            <li>完全隔離和自家定制</li>
+            <li>包含基本辦公家具和高速網絡</li>
+          </ol>
+          <button onclick="showAppointForm();" class="btn" name="btn" id="btn"><a>立即預約</a></button>   
+        </div>
+      </div>
+      
+      <div class="planC">
+        <div class="planLeft">
+          <h1>會議室套餐</h1>
+          <h3>方案特色</h3>
+          <ol>
+            <li>靈活的半天/全天租借</li>
+            <li>專業會議室</li>
+            <li>全套會議設備，包括咖啡茶點供應</li>
+          </ol>
+          <button onclick="showAppointForm();" class="btn" name="btn" id="btn"><a>立即預約</a></button>    
+        </div>
+        <div class="planRight">
+          <img src="/toa-heftiba-FV3GConVSss-unsplash 1.png" alt="" style="width: 100%;" />
+        </div>
+      </div>
+  </div>
+
+
+  <!-- 預約表單 -->
+  <div class="formWrap" id="showForm">
+    <form method="post" action="" class="showForm"  >
+      <img class="x" id="x" onclick="hideAppointForm();" 
+      width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/macos-close.png" alt="macos-close"/>
+    
+      <label for="space" style="font-size: 24px;">預約場地:</label>
+      <select style="width: 120px; height: 30px; margin-left: 25px; margin-top: 10px;">
+          <option value="0">靈活共用區</option>
+          <option value="1">私人辦公室專區</option>
+          <option value="2">會議室套餐專區</option>
+      </select></br>
+      <label for="start" style="font-size: 24px;">預約開始日:</label>
+      <input type="date" id="start" name="trip-start" 
+      value="2024-01-03" min="202401-01" max="2040-12-31" style="width: 120px;"/></br>
+      <label for="end" style="font-size: 24px;">預約結束日:</label>
+      <input type="date" id="end" name="trip-end" 
+      value="2024-01-03" min="202401-01" max="2040-12-31" style="width: 120px;"/>
+
+    
+      <div class="appoint">
+          <div class="appointLeft"><p>預約時間:</p></div>
+          <div class="appointRight">
+              
+              <button style="width: 120px;">9:00</button>
+              <button style="width: 120px;">10:00</button>
+              <button style="width: 120px;">11:00</button>
+              <button style="width: 120px;">12:00</button>
+              <button style="width: 120px;">13:00</button>
+              <button style="width: 120px;">14:00</button>
+              <button style="width: 120px;">15:00</button>
+              <button style="width: 120px;">16:00</button>
+              <button style="width: 120px;">17:00</button>
+              <button style="width: 120px;">18:00</button>
+          </div>
+          
+      </div>
+      <label for="name" style="font-size: 24px;">預約姓名:</label>
+      <input type="text" id="name" class="name" style="height: 20px; width: 115px; margin-left: 25px;">
+      </br>
+      <label for="number" style="font-size: 24px;">聯絡電話:</label>
+      <input type="text" id="number" class="number" style="height: 20px; width: 115px; margin-left: 25px;">
+      </br>
+      <input class="btn" type="submit" value="送出預約" />
+
+    </form>
+  </div>
+<!-- js for click appointment -->
+<script>
+    var appoint, form;
+    window.onload = function(){
+      appoint = document.getElementById("showForm");
+      x = document.getElementById("x");
+    }
+    function showAppointForm(){
+      appoint.style.display = "block";
+    }
+    function hideAppointForm(){
+      appoint.style.display = "none";
+    }
+
+</script>
+
+  <footer>
+  
+    <div class="footerContent">
+      <h3>About</h3>
+      <li><a href="#">經營理念</a></li>
+      <li><a href="#">專屬規劃</a></li>
+    </div>
+    <div class="footerContent">
+      <h3>Plans</h3>
+      <li><a href="#">靈活共用</a></li>
+      <li><a href="#">私人辦公室</a></li>
+      <li><a href="#">會議室套餐</a></li>
+    </div>
+    <div class="footerContent">
+      <h3>Q&A</h3>
+      <p><a href="#">服務相關</a></p>
+    </div>
+    <div class="footerContent">
+      <h3>Contact</h3>
+      <p>TEL: 04-11110000</p>
+      <p>Mail: fake@fwinc.co</p>
+    </div>
+  
+  </footer>
+
+</body>
+<script src="/main/app.js"></script>
+</html>

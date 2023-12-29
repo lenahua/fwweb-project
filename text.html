@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/text.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <form method="post" action="">
+        <div class="x">
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/macos-close.png" alt="macos-close"/>
+        </div>
+        <label for="space" style="font-size: 24px;">預約場地:</label>
+        <select style="width: 120px; height: 30px; margin-left: 25px; margin-top: 10px;">
+            <option value="0">靈活共用區</option>
+            <option value="1">私人辦公室專區</option>
+            <option value="2">會議室套餐專區</option>
+        </select></br>
+        <label for="start" style="font-size: 24px;">預約開始日:</label>
+        <input type="date" id="start" name="trip-start" 
+        value="2024-01-03" min="202401-01" max="2040-12-31"/></br>
+        <label for="end" style="font-size: 24px;">預約結束日:</label>
+        <input type="date" id="end" name="trip-end" 
+        value="2024-01-03" min="202401-01" max="2040-12-31" />
+    
+        
+        <div class="appoint">
+            <div class="appointLeft"><p>預約時間:</p></div>
+            <div class="appointRight">
+                
+                <button style="width: 120px;">9:00</button>
+                <button style="width: 120px;">10:00</button>
+                <button style="width: 120px;">11:00</button>
+                <button style="width: 120px;">12:00</button>
+                <button style="width: 120px;">13:00</button>
+                <button style="width: 120px;">14:00</button>
+                <button style="width: 120px;">15:00</button>
+                <button style="width: 120px;">16:00</button>
+                <button style="width: 120px;">17:00</button>
+                <button style="width: 120px;">18:00</button>
+            </div>
+            
+        </div>
+        <label for="name" style="font-size: 24px;">預約姓名:</label>
+        <input type="text" id="name" class="name" style="height: 20px; width: 115px; margin-left: 25px;">
+        </br>
+        <label for="number" style="font-size: 24px;">聯絡電話:</label>
+        <input type="text" id="number" class="number" style="height: 20px; width: 115px; margin-left: 25px;">
+        </br>
+        <input class="btn" type="submit" value="送出預約" />
+
+    </form>
+
+   
+</body>
+
+</html>
+
+
+    

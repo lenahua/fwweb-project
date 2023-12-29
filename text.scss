@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body p{
+    font-size: 24px;
+}
+form{
+    background-color: cadetblue;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 10px 10px 5px rgb(91, 95, 97); 
+    width: 280px;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    .x{
+        width: auto;
+        height: 30px;
+        position: absolute;
+        right: -8px;
+        top: -15px;
+    }
+
+}
+.appoint{
+    width: 700px;
+    // height: 300px;
+    display: flex;
+    // background-color: bisque;
+    margin-left: 13px;
+   
+    .appointRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 25px;
+        width: 130px;
+        height: 100px;
+        overflow: auto;
+        button{
+            margin: 5px;
+            cursor: pointer;
+            
+        }
+        button:hover{
+            background-color: rgb(188, 146, 123);
+        }
+    }
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-image: linear-gradient(to right bottom, #353c40 0%, #8c877d 100%);
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}

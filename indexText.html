@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共享空間租借網站</title>
+    <meta name="description" content="提供多樣化的共享空間，從私人辦公室到共用工作區，滿足您的所有需求。"/>
+    <meta name="robot" content="index, follow" />
+    
+    <!-- Google font setting -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styleText.css" />
+    <!-- bootstrap setting -->
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <button onclick="topFunction()" class="gotop" id="gotop"><img width="48" height="48" src="https://img.icons8.com/plumpy/48/000000/collapse-arrow.png" alt="collapse-arrow"/></button>
+    <!-- header -->
+    <header>
+        <div class="logo"><a href="index.html">
+          <img src="/workplace-project-pic/logo.png" alt="kawaii-steak-logo"/></a>
+          <h3>FLEXCO WORKSPACE</h3>
+        </div>
+
+        <div class="containerNav" id="containerNav">
+
+          <div>
+              <ul>
+                  <li class="dropdown"> 
+                    <a href="index.html" class="dropbtn about">About</a>
+                    <div class="dropdownContent">
+                      <a href="#">經營理念</a>
+                      <a href="#">專屬規劃</a>
+                    </div>
+                  </li>
+                  <li class="dropdown"> 
+                    <a href="./plan.html" class="dropbtn">Plans</a>
+                    <div class="dropdownContent">
+                      <a href="./plan.html">靈活共用</a>
+                      <a href="./plan.html">私人辦公室</a>
+                      <a href="./plan.html">會議室套餐</a>
+                    </div>
+                  </li>
+                  
+                  <li> <a href="#">Q&A</a></li>
+                  <li> <a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          <div class="contactIcon">
+              <a href="#"><img src="/workplace-project-pic/line.svg" alt="line"></a>
+              <a href="#"><img src="/workplace-project-pic/instagram.svg" alt="instragram"></a>
+              <a href="#"><img src="/workplace-project-pic/linkedin.svg" alt="linkedin"></a>
+          </div>
+        </div>
+          <div class="buggerBtn" id="buggerBtn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>  
+
+        
+        <script>
+          
+          // let btn = document.getElementById("buggerBtn");
+          // let nav = document.getElementById("containerNav") ;
+          // btn.addEventListener('click', function(e){
+          //   if (nav.style.display === none || nav.style.display ===""){
+          //     nav.style.display = 'block';
+          //   } else {
+          //     nav.style.display = 'none';
+          //   }
+          // })
+          let goTop = document.getElementById("gotop");
+          window.onscroll = function(){scrollFunction()};
+          function scrollFunction(){
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20){
+              goTop.style.display = "block";
+            } else{
+              goTop.style.display = "none";
+            }
+          }
+          function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          
+        </script>
+
+    </header>
+    <!-- carousel -->
+
+    
+    <div>
+          <div id="carouselExampleControls" class="carouselslide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/workplace-project-pic/carousel4.png" class="d-block w-100 h-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/workplace-project-pic/carousel1.png" class="d-block w-100 h-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/workplace-project-pic/carousel3.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+    </div>
+
+  <div class="main">
+    <!-- section2 About -->
+    <div class="containerAbout">
+      <h3>ABOUT</h3>
+      <p>歡迎來到Flexco WorkSpace - 一個簡單、方便、且無縫的共享空間體驗平台！
+        
+        在現代快節奏的生活中，我們明白您需要一個靈活、價格合理的空間解決方案。無論您是一位業務專業人士、自由職業者還是企業所有者，我們的共享空間平台將滿足您的需求，
+        為您提供一個獨特且令人難忘的工作環境。</p>
+    </div>
+    <!-- about picture -->
+    <div class="containerAboutPic">
+      <div class="card">
+          <img src="/workplace-project-pic/小型會議室 1.png" alt="" >
+          <div class="text">
+              <h2>工作空間租賃</h2>
+              <p>提供靈活的工作空間選擇，滿足不同需求的專業人士和企業</p>
+          </div>
+      </div>
+      <div class="card">
+          <img src="/workplace-project-pic/publicOffice2.png" alt="">
+          <div class="text">
+              <h2>社群與網絡機會</h2>
+              <p>促進人際交流和業務機會，打造有價值的共享工作環境</p>
+          </div>
+      </div>
+      <div class="card">
+          <img src="/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash 1.png" alt="">
+          <div class="text">
+              <h2>彈性方案與管理支援</h2>
+              <p>提供便捷的租賃選項和全方位的管理支援</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    
+
+
+<!-- section3 Q&A-->
+  <div class="containerQA">
+    <div class="backImage">
+      <div class="filter">
+        <h2>Q&A</h2>
+        <p>常見問題解答</p>
+        <button class="btn"><a href="https://google.com">More</a></button> 
+      </div>
+    </div>
+  </div>
+<!-- PLAN section -->
+
+  <div class="plan">
+    <div class="box">
+      <div class="front">
+        <div class="icon">
+          <i class="p1" aria-hidden="true"><img width="48" height="48" src="https://img.icons8.com/parakeet-line/64/winner.png" alt="winner"/></i>
+        </div>
+          <span>PlanA</span>
+      </div>
+      <a href="plan.html"><div class="back">
+          <span>PlanA</span>
+          <p>靈活共用</p>
+          <p>適用對象：自由職業者、小型團隊</p>
+      </div></a>
+    </div>
+    <div class="box">
+      <div class="front">
+        <div class="icon">
+          <i class="p1" aria-hidden="true" src=""><img src="https://img.icons8.com/ios/64/home-office--v1.png"/></i>
+        </div>
+          <span>PlanB</span>
+      </div>
+      <a href="plan.html"><div class="back">
+          <span>PlanB</span>
+          <p>私人辦公室</p>
+          <p>適用對象：小型企業、創業者</p></a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="front">
+        <div class="icon">
+          <i class="p1" aria-hidden="true"><img width="64" height="64" src="https://img.icons8.com/wired/64/client-company--v1.png" alt="client-company--v1"/></i>
+        </div>
+          <span>PlanC</span>
+      </div>
+      <a href="plan.html"><div class="back">
+          <span>PlanC</span>
+          <p>會議室套餐</p>
+          <p>適用對象：團隊會議、工作坊</p></a>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+<!-- footer -->
+<footer>
+  
+    <div class="footerContent">
+      <h3>About</h3>
+      <li><a href="#">經營理念</a></li>
+      <li><a href="#">專屬規劃</a></li>
+    </div>
+    <div class="footerContent">
+      <h3>Plans</h3>
+      <li><a href="#">靈活共用</a></li>
+      <li><a href="#">私人辦公室</a></li>
+      <li><a href="#">會議室套餐</a></li>
+    </div>
+    <div class="footerContent">
+      <h3>Q&A</h3>
+      <p><a href="#">服務相關</a></p>
+    </div>
+    <div class="footerContent">
+      <h3>Contact</h3>
+      <p>TEL: 04-11110000</p>
+      <p>Mail: fake@fwinc.co</p>
+    </div>
+  
+</footer>
+
+
+
+</body>
+<script src="app.js"></script>
+</html>

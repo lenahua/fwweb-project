@@ -1,0 +1,385 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  background-color: #ddddda !important;
+  height: 100vh;
+}
+
+#gotop {
+  display: none;
+  z-index: 101;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  padding: 10px;
+}
+
+#gotop:hover {
+  background-color: #b9b5b5;
+}
+
+header {
+  background-color: #353c40;
+  color: white;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 101;
+  box-shadow: 3px 3px 5px 1px #909090;
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100px;
+}
+header div.logo img {
+  width: 40px;
+  height: 40px;
+}
+header .containerNav {
+  display: flex;
+}
+header div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #353c40;
+  display: flex;
+  flex-direction: row;
+}
+header div ul .about {
+  background-color: #ddddda;
+  color: #000;
+}
+header div li a, header div .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+header div li a:hover, header div .dropdown:hover .dropbtn {
+  background-color: #ddddda;
+  color: #000;
+}
+header div li.dropdown {
+  display: inline-block;
+}
+header div .dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header div .dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+header div .dropdownContent a:hover {
+  background-color: #ddddda;
+}
+header div .dropdown:hover .dropdownContent {
+  display: block;
+}
+header div.contactIcon {
+  display: flex;
+  align-items: center;
+}
+header div.contactIcon img {
+  padding: 5px;
+  width: 30px;
+  height: auto;
+}
+header .buggerBtn {
+  cursor: pointer;
+  display: none;
+}
+header .buggerBtn .bar {
+  background-color: #ddddda;
+  width: 35px;
+  height: 6px;
+  margin: 6px;
+}
+@media screen and (max-width: 768px) {
+  header .buggerBtn {
+    display: block;
+  }
+  header .containerNav > div:not(.buggerBtn) {
+    display: none;
+  }
+  header .containerNav.show {
+    display: block;
+  }
+}
+
+.containerAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+.containerAbout p {
+  width: 70%;
+  text-align: center;
+}
+
+.containerAboutPic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 310px;
+  height: 220px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  transition: 0.35s;
+}
+
+.card .text {
+  position: absolute;
+  inset: 30px;
+  padding: 0 18px;
+}
+
+.card .text::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.6s;
+}
+
+.card .text h2,
+.card .text p {
+  margin-bottom: 6px;
+  opacity: 0;
+  transition: 0.35s;
+}
+
+.card .text h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  transform: translate(30%, 0%);
+  transition-delay: 0.3s;
+}
+
+.card .text p {
+  font-weight: 200;
+  transform: translate(0%, 30%);
+}
+
+.card:hover img {
+  opacity: 0.3;
+}
+
+.card:hover .text h2 {
+  opacity: 1;
+  transform: translate(0%, 0%);
+  transition-delay: 0.4s;
+}
+
+.card:hover .text p {
+  opacity: 0.9;
+  transform: translate(0%, 0%);
+  transition-delay: 0.6s;
+}
+
+.card:hover .text::before {
+  background-color: rgba(255, 255, 255, 0);
+  left: 0;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.containerQA {
+  margin: 100px 0;
+}
+.containerQA .backImage {
+  width: 100%;
+  min-height: 50vh;
+  background-image: url("/toa-heftiba-FV3GConVSss-unsplash 1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+.containerQA .backImage .filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 50%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.containerQA .backImage .filter .btn a {
+  text-decoration: none;
+  color: #ccc;
+}
+.containerQA .backImage .filter .btn {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #afaeae, 0px 0px 12px #fff;
+}
+.containerQA .backImage .filter .btn::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #404c44 0%, #ccccca 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+.containerQA .backImage .filter .btn:hover::before {
+  width: 9em;
+}
+
+.plan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 20px;
+}
+.plan .box {
+  width: 350px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 3000px;
+}
+.plan .box .front {
+  background-color: #909090;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+.plan .box .front .icon {
+  height: 80px;
+}
+.plan .box .front .icon i,
+.plan .box .front span {
+  background: linear-gradient(220deg, #ccc, #ddc9c6);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 15px;
+}
+.plan .box .front .icon i {
+  font-size: 60px;
+  font-weight: 900;
+}
+.plan .back a, .plan span, .plan p {
+  text-decoration: none;
+  color: #000;
+}
+.plan .box .front span,
+.plan .box .back span {
+  font-size: 22px;
+  font-weight: 600;
+}
+.plan .box .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(220deg, #ccc, #ddc9c6);
+  padding: 30px;
+  color: #000;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(110px) rotateX(-90deg);
+  transition: 0.5s ease;
+}
+.plan .box .back p {
+  margin-top: 12px;
+  text-align: justify;
+  line-height: 23px;
+}
+.plan .box:hover .front {
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+.plan .box:hover .back {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #353c40;
+  width: 100%;
+  height: 35vh;
+  color: white;
+}
+footer .footerContent {
+  margin: 30px;
+}
+footer .footerContent a, footer .footerContent p {
+  text-decoration: none;
+  color: #ddc9c6;
+}
+footer .footerContent a:hover {
+  color: #f66352;
+}
+footer .footerContent li {
+  list-style-type: none;
+  margin: 20px 0;
+}
+footer .footerContent p {
+  margin: 20px 0;
+}/*# sourceMappingURL=styleText.css.map */
